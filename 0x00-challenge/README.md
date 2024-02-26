@@ -1,1 +1,3 @@
-# Fix-my-code-0
+# Fix My Code Project
+
+## fixing errors in codes in python - ruby - javascript
