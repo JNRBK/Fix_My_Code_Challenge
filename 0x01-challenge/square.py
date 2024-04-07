@@ -2,15 +2,13 @@
 """define a square class"""
 
 
-class square():
+class Square():
     """
     Class that calculates a square area and permiter
     ARGS:
-        width - of a square
-        height - of a square
+        square = sides of a square
     """
-    width = 0
-    height = 0
+    square = 0
 
     def __init__(self, *args, **kwargs):
         """ __init__ """
@@ -19,20 +17,20 @@ class square():
 
     def area_of_my_square(self):
         """ Area of the square """
-        return self.width * self.width
+        return self.square * self.square
 
     def PermiterOfMySquare(self):
         """ permiter of a square """
-        return (self.width + self.height) * 2
+        return self.square * 4
 
     def __str__(self):
         """string function of a class"""
-        return "{}/{}".format(self.width, self.height)
+        return "{}/{}".format(self.square, self.square)
 
 
 if __name__ == "__main__":
 
-    s = square(width=12, height=9)
+    s = Square(square=4)
     print(s)
     print(s.area_of_my_square())
     print(s.PermiterOfMySquare())
